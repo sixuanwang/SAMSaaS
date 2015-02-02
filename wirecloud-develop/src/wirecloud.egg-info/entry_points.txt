@@ -1,0 +1,3 @@
+[console_scripts]
+wirecloud-admin = wirecloud.commons.wirecloud_admin:execute_from_command_line
+

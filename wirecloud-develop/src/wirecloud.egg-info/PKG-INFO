@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: wirecloud
+Version: 0.7.0rc3
+Summary: Widgets Container and Mashup edition tools for composing end-user centric mashup applications.
+Home-page: http://github.com/Wirecloud/wirecloud
+Author: CoNWeT Lab
+Author-email: wirecloud@conwet.com
+License: AGPLv3+ with classpath-like exception
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: JavaScript
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

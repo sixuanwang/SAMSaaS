@@ -1,0 +1,7 @@
+/index/
+/static/
+/catalogue/
+/deployment/
+*.pyc
+*.mo
+*.db

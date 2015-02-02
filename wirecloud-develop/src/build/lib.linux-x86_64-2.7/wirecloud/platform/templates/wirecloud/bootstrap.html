@@ -1,0 +1,13 @@
+<script type="text/javascript">
+    var Wirecloud = {
+        constants: {
+{% for entry in constants %}            {{ entry.key }}: {{ entry.value }}{% if not forloop.last %},{% endif %}
+{% endfor %}        },
+        ui: {}
+    };
+</script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/StyledElements/Utils.js" ></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/wirecloud/Utils.js" ></script>
+<script type="text/javascript">
+{{ script }}
+</script>

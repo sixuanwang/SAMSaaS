@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+	<Catalog.ResourceDescription>
+		<Vendor>Wirecloud</Vendor>
+		<Name>wirecloud-components-showcase</Name>
+        <DisplayName>__MSG_displayName__</DisplayName>
+		<Version>1.1.8</Version>
+		<Author>aarranz</Author>
+		<Mail>aarranz@conwet.com</Mail>
+		<Description>TODO</Description>
+		<ImageURI>TODO</ImageURI>
+		<WikiURI>TODO</WikiURI>
+	</Catalog.ResourceDescription>
+
+	<Platform.Preferences>
+	</Platform.Preferences>
+
+	<Platform.StateProperties>
+	</Platform.StateProperties>
+
+	<Platform.Wiring>
+	</Platform.Wiring>
+
+	<Platform.Link>
+		<XHTML content-type="application/xhtml+xml" use-platform-style="true" href="index.html"/>
+	</Platform.Link>
+
+	<Platform.Rendering width="11" height="24"/>
+
+	<Translations default="en">
+        <Translation lang="en">
+            <msg name="displayName">Wirecloud Components Showcase</msg>
+        </Translation>
+
+        <Translation lang="es">
+            <msg name="displayName">Escaparate de Componentes Wirecloud</msg>
+        </Translation>
+
+    </Translations>
+
+</Template>

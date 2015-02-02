@@ -1,0 +1,22 @@
+@import 'variables';
+
+.rating > .star {
+    margin: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rating > .star.off:before {
+    color: rgb(102, 102, 102);
+    content: "\f006";
+}
+
+.rating > .star.on:before {
+    color: $rating-on-color;
+    content: "\f005";
+}
+
+.rating > .star.middle:before {
+    color: $rating-middle-color;
+    content: "\f123";
+}

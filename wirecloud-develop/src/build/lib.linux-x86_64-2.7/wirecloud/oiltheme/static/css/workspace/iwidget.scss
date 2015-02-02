@@ -1,0 +1,208 @@
+@import 'variables';
+
+.iwidget {
+    position: absolute;
+    -moz-transition: box-shadow 0.7s ease-in, opacity 0.35s ease-in, top 0.2s ease-in, left 0.2s ease-in, width 0.2s ease-in, height 0.2s ease-in;
+    -webkit-transition: box-shadow 0.7s ease-in, opacity 0.35s ease-in, top 0.2s ease-in, left 0.2s ease-in, width 0.2s ease-in, height 0.2s ease-in;
+    transition: box-shadow 0.7s ease-in, opacity 0.35s ease-in, top 0.2s ease-in, left 0.2s ease-in, width 0.2s ease-in, height 0.2s ease-in;
+    border-color: #C2CBD2;
+    overflow: visible;
+}
+
+.iwidget.draganddrop {
+    -moz-transition: box-shadow 0.7s ease-in, opacity 0.35s ease-in;
+    -webkit-transition: box-shadow 0.7s ease-in, opacity 0.35s ease-in;
+    transition: box-shadow 0.7s ease-in, opacity 0.35s ease-in;
+}
+
+.iwidget > .widget_menu {
+    background: transparent;
+  	color: #888;
+    font-size: 20px;
+    cursor: move;
+    line-height: 30px;
+    position: relative;
+}
+
+.iwidget > .widget_menu > span {
+    display: inline;
+}
+
+.iwidget > .widget_menu > .buttons {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: linear-gradient(to right, rgba(252, 252, 252, 0), rgb(252, 252, 252) 38px, rgb(252, 252, 252));
+    border-radius: 4px;
+    padding: 0px 3px 0px 38px;
+    opacity: 0;
+    white-space: nowrap;
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 1s;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 1s;
+    -o-transition-property: opacity;
+    -o-transition-duration: 1s;
+    transition-property: opacity;
+    transition-duration: 1s;
+    line-height: 28px;
+}
+
+.iwidget > .widget_menu:hover > .buttons {
+    opacity: 1;
+}
+
+.iwidget > .widget_menu .styled_button {
+    font-size: 75%;
+    color: rgba(136, 136, 136, 0.6);
+    -moz-transition-property: color;
+    -moz-transition-duration: 1s;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 1s;
+    -o-transition-property: color;
+    -o-transition-duration: 1s;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+.iwidget > .widget_menu .styled_button:focus, .iwidget > .widget_menu .styled_button:hover {
+    color: rgba(136, 136, 136, 1);
+}
+
+.iwidget > .widget_menu > .infobuttons {
+    padding: 0px 38px 0px 3px;
+    background: linear-gradient(to left, rgba(252, 252, 252, 0), rgb(252, 252, 252) 38px, rgb(252, 252, 252));
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    line-height: 28px;
+}
+
+.iwidget > .widget_menu .errorbutton.disabled {
+    display: none;
+}
+
+.iwidget > .widget_shadow {
+    background: $widget-bg;
+    box-shadow: 0 0 8px rgba(50, 50, 50, 0.1);
+    border-radius: 4px;
+    -moz-transition: box-shadow 0.7s linear;
+    -webkit-transition: box-shadow 0.7s linear;
+    transition: box-shadow 0.7s linear;
+}
+
+.iwidget > .widget_shadow > .widget_wrapper {
+    clear: both;
+    overflow: hidden;
+    width: auto;
+    border-width: 1px 1px 0px 1px;
+    border-radius: 4px 4px 0px 0px;
+    border-style: solid;
+    border-color: #DDD;
+    -moz-transition: border-color 0.7s ease-in;
+    -webkit-transition: border-color 0.7s ease-in;
+    transition: border-color 0.7s ease-in;
+}
+
+.iwidget > .widget_shadow > .widget_wrapper > iframe {
+    border-radius: 3px 3px 0px 0px;
+    width: 100%;
+    border: none;
+}
+
+.iwidget > .widget_shadow > .statusBar {
+    height: 1px;
+    border: 1px solid #DDD;
+    border-radius: 0px 0px 4px 4px;
+    background: #DDD;
+    -moz-transition: border-color 0.7s ease-in, background-color 0.7s ease-in;
+    -webkit-transition: border-color 0.7s ease-in, background-color 0.7s ease-in;
+    transition: border-color 0.7s ease-in, background-color 0.7s ease-in;
+}
+
+.iwidget.highlighted > .widget_shadow {
+    -webkit-animation: highlight_iwidget 2s infinite linear;
+    -moz-animation: highlight_iwidget 2s infinite linear;
+    -o-animation: highlight_iwidget 2s infinite linear;
+    animation: highlight_iwidget 2s infinite linear;
+}
+
+.iwidget.highlighted > .widget_shadow > .widget_wrapper {
+    border-color: rgba(82, 168, 236, 0.8);
+}
+
+.iwidget.highlighted > .widget_shadow > .statusBar {
+    border-color: rgba(82, 168, 236, 0.8);
+    background-color: rgb(82, 168, 236);
+}
+
+@-webkit-keyframes highlight_iwidget {
+    0% {
+        box-shadow: 0 0 8px 0px rgba(82, 168, 236, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 8px 4px rgba(82, 168, 236, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 8px 0px rgba(82, 168, 236, 0.6);
+    }
+}
+
+.fulldragboard .iwidget > .widget_shadow > .statusBar {
+  display: none;
+}
+
+.iwidget .bottomResizeHandle {
+    position: absolute;
+    height: 10px;
+    bottom: -5px;
+    left: 48px;
+    right: 48px;
+    cursor: s-resize;
+}
+
+.iwidget .leftResizeHandle {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    bottom: -5px;
+    left: -2px;
+    cursor: sw-resize;
+}
+
+.iwidget .rightResizeHandle {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    bottom: -5px;
+    right: -2px;
+    cursor: se-resize;
+}
+
+.iwidget .inUse {
+    width: 200%;
+    height: 200%;
+}
+
+.iwidget .leftResizeHandle.inUse {
+    right: 0px;
+    top: 0px;
+    bottom: auto;
+    left: auto;
+}
+
+.iwidget .rightResizeHandle.inUse {
+    left: 0px;
+    top: 0px;
+    bottom: auto;
+    right: auto;
+}
+
+/*div.dragboard.fixed*/
+div.fixed .iwidget .leftResizeHandle,
+  div.fixed .iwidget .rightResizeHandle,
+{
+  display: none;
+}
