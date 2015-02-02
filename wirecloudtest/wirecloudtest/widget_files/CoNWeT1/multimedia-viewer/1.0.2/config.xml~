@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+    <Catalog.ResourceDescription>
+        <Vendor>CoNWeT1</Vendor>
+        <Name>multimedia-viewer</Name>
+        <DisplayName>Multimedia Viewer</DisplayName>
+        <Version>1.0.1</Version>
+        <Author>sblanco</Author>
+        <Mail>sblanco@conwet.com</Mail>
+        <Description>This widget allows watch youtube videos and flickr images.</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+        <iPhoneImageURI>icons/multimedia-viewer-small.gif</iPhoneImageURI>
+        <WikiURI>http://conwet.fi.upm.es/docs/display/wirecloud/Multimedia+Viewer</WikiURI>
+    </Catalog.ResourceDescription>
+    
+    <Platform.Preferences>
+        <Preference
+            name="apikeyPref"
+            type="text"
+            description="Flickr API Key"
+            label="Flickr API Key"
+            default="4cedefbbddc927671820a9ce82155a2f"/>
+        <Preference
+            name="synchronousWiringPref"
+            type="text"
+            description="Enable synchronous bound between widgets"
+            label="Enable synchronous bound between widgets"
+            default="true"/>
+    </Platform.Preferences>
+
+    <Platform.Wiring>
+        <InputEndpoint
+            name="uriSlot"
+            type="text"
+            label="Multimedia URL"
+            description="The URI's video or photo"
+            friendcode="url" />
+        <OutputEndpoint
+            name="urlEvent"
+            type="text"
+            label="Multimedia URL"
+            description="The URL's video or photo"
+            friendcode="url"/>
+    </Platform.Wiring>
+    
+    <Platform.Link>
+        <XHTML
+            href="index.html"
+            contenttype="text/html"
+            cacheable="false"
+            use-platform-style="true"/>
+    </Platform.Link>
+
+    <Platform.Rendering width="6" height="28"/>
+</Template>

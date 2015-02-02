@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+
+    <Catalog.ResourceDescription>
+        <Vendor>CoNWeT</Vendor>
+        <Name>input-box</Name>
+        <DisplayName>Input Box</DisplayName>
+        <Author>sblanco</Author>
+        <Version>1.0</Version>
+        <Mail>sblanco@conwet.com</Mail>
+        <Description>It sends a message written into the box</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+        <iPhoneImageURI>images/catalogue.png</iPhoneImageURI>
+        <WikiURI>http://conwet.fi.upm.es/docs/display/wirecloud/Widgets</WikiURI>
+    </Catalog.ResourceDescription>
+
+    <Platform.Preferences>
+        <Preference name="input_label_pref" type="text" description="Text shown in front of the text field." label="Input label" default="Keywords"/>
+        <Preference name="input_placeholder_pref" type="text" description="Placeholder used in the text field." label="Input placeholder" default="Text to send..." />
+        <Preference name="button_label_pref" type="text" description="Text shown in the button." label="Button label" default="Send"/>
+    </Platform.Preferences>
+
+    <Platform.Wiring>
+        <OutputEndpoint name="outputKeyword" type="text" label="Keyword" description="This event is sent when the user press the enter key or push the send button" friendcode="keyword"/>
+    </Platform.Wiring>
+
+    <Platform.Link>
+        <XHTML
+            href="index.html"
+            contenttype="text/html"
+            cacheable="false"
+            use-platform-style="true"/>
+    </Platform.Link>
+
+    <Platform.Rendering width="5" height="8"/>
+</Template>

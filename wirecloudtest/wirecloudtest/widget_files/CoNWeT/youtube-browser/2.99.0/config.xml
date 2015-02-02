@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+
+    <Catalog.ResourceDescription>
+        <Vendor>CoNWeT</Vendor>
+        <Name>youtube-browser</Name>
+        <DisplayName>YouTube Browser</DisplayName>
+        <Version>2.99.0</Version>
+        <Author>aarranz</Author>
+        <Mail>aarranz@conwet.com</Mail>
+        <Description>This widget lets you to browse youtube videos from a predefined list of channels (currently: Popular on Youtube, Music, Sports, Games and Movies). This widget can also perform keyword searches on youtube if connected to other widgets/operators by wiring.</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+        <WikiURI>http://conwet.fi.upm.es/docs/display/wirecloud/Youtube+Video+Search</WikiURI>
+    </Catalog.ResourceDescription>
+
+    <Platform.Preferences>
+        <Preference name="channel" type="list" description="default channel" label="Default channel" default="0">
+            <Option value="0" name="Popular on YouTube"/>
+            <Option value="1" name="Music"/>
+            <Option value="2" name="Sports"/>
+            <Option value="3" name="Gaming"/>
+            <Option value="4" name="Movies"/>
+        </Preference>
+    </Platform.Preferences>
+
+    <Platform.Wiring>
+        <InputEndpoint name="keyword" type="text" description="Keyword to search in Youtube" action_label="YouTube Search" label="Search by keyword" friendcode="keyword"/>
+        <OutputEndpoint name="video" type="text" description="Video clicked in the user interface of the widget" label="Video clicked" friendcode="youtube_video"/>
+    </Platform.Wiring>
+
+    <Platform.Link>
+        <XHTML href="index.html" content-type="application/xhtml+xml" use-platform-style="true"/>
+    </Platform.Link>
+
+    <Platform.Rendering width="6" height="33"/>
+</Template>
