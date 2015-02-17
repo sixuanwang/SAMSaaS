@@ -5,3 +5,4 @@ from wirecloud.platform.preferences.models import *
 from wirecloud.platform.widget.models import *
 from wirecloud.platform.wiring.models import *
 from wirecloud.platform.workspace.models import *
+from wirecloud.platform.testsx.models import *

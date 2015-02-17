@@ -1,23 +1,29 @@
 {% extends 'wirecloud/views/base_plain.html' %}
 {% load i18n compress wirecloudtags %}
-{% block title %}{% trans "WireCloud · Build application mashups" %}{% endblock %}
-{% block path %}{% trans "Welcome to WireCloud!" %}{% endblock %}
+{% block title %}{% trans "SAMSaaS - Build siumulation mashups" %}{% endblock %}
+{% block path %}{% trans "Welcome to SAMSaaS!" %}{% endblock %}
 {% block css %}
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/landing_page.css" />
 {% endblock %}
 {% block content %}
 
-    <h3>{% trans "Welcome to the next-generation application mashup platform aimed at leveraging the long tail of the Internet of Services."%}</h3>
+    <h3>{% trans "Welcome to Semantic Architecture for Modeling and Simulation as a Services (SAMSaaS)!"%}</h3>
     <section id="innertop" class="grid-block">
 
-        <div class="grid-box width25">
+        <div class="grid-box width75">
             <div class="panel module">
-                <p class="img"> <img src="{{ STATIC_URL }}images/innovation3.png" alt="Innovation"/> </p>
-                <h3> Innovation </h3>
-                        <p> Innovate through experimentation by choosing the best suited widgets and prefab mashup-lets for your devised mashup from a vast, ever-growing distributed catalogue </p>
+                <h3> Features </h3>
+                    <li>Simulation mashups with Modeling and Simulation as a Services in the Cloud </li>
+                    <li>Semantic Wiring of different simulation-realted boxes</li>
+                    <li>Sixuan Wang, Gabriel Wainer</li>
+                    <li>Dept. of Computers and Enginerring, Carleton University</li>
+
+                    <li>license under GNU  AFFERO GENERAL PUBLIC LICENSE 3 (AGPL3)</li>
+                    <li>Feb 2015</li>
                 </div>
             </div>
 
+            <!--
         <div class="grid-box width25">
             <div class="panel module">
                 <p class="img"> <img src="{{ STATIC_URL }}images/features.png" alt="Features"/> </p>
@@ -58,6 +64,8 @@
                 </ul>
             </div>
         </div>
+        
+        -->
 
     </section>
 

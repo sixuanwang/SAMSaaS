@@ -1,1 +1,0 @@
-Wirecloud.FiWare = {};

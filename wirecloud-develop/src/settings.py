@@ -41,7 +41,7 @@ THEME_ACTIVE = "wirecloud.defaulttheme"
 # although not all variations may be possible on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'Europe/Madrid'
+TIME_ZONE = 'Canada/Eastern'
 DATE_FORMAT = 'd/m/Y'
 
 # Language code for this installation. All choices can be found here:
@@ -50,9 +50,7 @@ LANGUAGE_CODE = 'en'
 DEFAULT_LANGUAGE = 'browser'
 
 LANGUAGES = (
-    ('es', 'Spanish'),
     ('en', 'English'),
-    ('pt', 'Portuguese'),
 )
 
 # If you set this to False, Django will make some optimizations so as not

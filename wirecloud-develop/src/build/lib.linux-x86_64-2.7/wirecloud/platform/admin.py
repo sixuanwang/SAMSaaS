@@ -23,6 +23,8 @@ from relatives.utils import object_edit_link
 
 from wirecloud.platform import models
 
+admin.site.register(models.Reporter)  #sixuan
+admin.site.register(models.Article)    #sixuan
 
 admin.site.register(models.Constant)
 

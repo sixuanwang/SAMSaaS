@@ -34,12 +34,17 @@ from wirecloud.platform.preferences import views as preferences_views
 from wirecloud.platform.theme import views as theme_views
 from wirecloud.platform.widget import views as widget_views
 from wirecloud.platform.workspace import views as workspace_views
+from wirecloud.platform.testsx import views as testsx_views  #sixuan test
 
 
 urlpatterns = patterns('wirecloud.platform.views',
 
     url(r'^$', 'render_root_page', name='wirecloud.root'),
+    
+    #url(r'^testsx/$', testsx_views.hello),
 
+    url(r'^articles/(\d{4})/$', testsx_views.year_archive),
+   
     url(r'^api/features/?$',
         views.FeatureCollection(permitted_methods=('GET',)),
         name='wirecloud.features'),

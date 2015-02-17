@@ -5,6 +5,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
+from wirecloud.testsx.views import hello
 import wirecloud.platform.urls
 
 admin.autodiscover()
@@ -23,7 +24,8 @@ urlpatterns = patterns('',
     url(r'^admin/logout/?$', 'wirecloud.commons.authentication.logout'),
 
     # Admin interface
-    (r'^admin/', include(admin.site.urls)),
+    (r'^admin/', include(admin.site.urls)),  
+
 )
 
 urlpatterns += wirecloud.platform.urls.urlpatterns
